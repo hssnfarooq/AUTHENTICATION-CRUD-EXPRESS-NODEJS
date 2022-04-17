@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('../partials/head'); %>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header><%- include('../partials/navbar'); %></header>
+
+    <section class="mt-5 mb-5 d-flex justify-content-center align-items-center">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-md-6 col-sm-9 col-10 m-auto border border-danger border-end-0 border-start-0 py-3"
+          >
+            <div
+              class="col-md-11 col-sm-11 col-11 m-auto border border-secondary border-bottom-0 border-top-0"
+            >
+              <h2 class="text-center">LOGIN</h2>
+              <!--Login Form -->
+              <form class="p-3" action="/users/login" method="post">
+                <!-- Username Field -->
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label"
+                    >User Name</label
+                  >
+                  <input
+                    type="text"
+                    name="userName"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="John Doe"
+                    value=""
+                    required
+                  />
+                  <small class="no-username text-danger"></small>
+                </div>
+
+                <!-- Password -->
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label"
+                    >Password</label
+                  >
+                  <input
+                    type="password"
+                    name="password"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="****"
+                    value=""
+                    required
+                  />
+                  <small class="no-password text-danger"></small>
+                </div>
+
+                <!-- Login Text -->
+                <div class="mb-3">
+                  <p class="text-danger"></p>
+                  <small class="text-dark">
+                    If you don't have an account here then first create your
+                    account.
+                    <br />
+                    <a
+                      class="text-primary text-decoration-none fs-6"
+                      href="/users/register"
+                      >Click here</a
+                    >
+                    to Register
+                  </small>
+                </div>
+                <!-- Login Button -->
+                <div class="mb-3 text-center">
+                  <button type="submit" class="btn btn-outline-dark">
+                    Login
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

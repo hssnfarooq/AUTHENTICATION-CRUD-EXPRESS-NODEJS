@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('../partials/head'); %>
+  </head>
+  <body>
+    <header><%- include('../partials/navbar'); %></header>
+    <div class="container mt-5 pt-3">
+      <div class="row">
+        <!-- if contacts exist -->
+
+        <div class="col-md-12">
+          <h2>
+            Contacts
+            <a href="/addContact" class="btn btn-success float-end"
+              >Add New Contact</a
+            >
+          </h2>
+          <hr />
+          <% if(contacts.length > 0) { %>
+          <div class="table-responsive">
+            <table class="table align-middle">
+              <thead>
+                <tr>
+                  <th>Contact Name</th>
+                  <th>Contact Number</th>
+                  <th>Email Address</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <% contacts.map(function(contact) { %>
+                <tr>
+                  <td><%= contact.contactName %></td>
+                  <td><%= contact.contactNumber %></td>
+                  <td><%= contact.contactEmail %></td>
+                  <td>
+                    <a
+                      href="/deleteContact/<%= contact._id %>"
+                      class="btn btn-danger float-end"
+                      >Delete</a
+                    >
+                    <a
+                      href="/editContact/<%= contact._id %>"
+                      class="btn btn-primary float-end"
+                      >Edit</a
+                    >
+                  </td>
+                </tr>
+
+                <% }); %>
+              </tbody>
+            </table>
+          </div>
+          <% } else { %>
+          <p class="text-center"><%= message %></p>
+          <% } %>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

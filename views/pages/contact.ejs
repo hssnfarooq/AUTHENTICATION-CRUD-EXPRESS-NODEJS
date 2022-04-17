@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('../partials/head'); %>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header><%- include('../partials/navbar'); %></header>
+    <!-- Hero Section -->
+    <div
+      class="container-fluid bg-secondary d-flex justify-content-center align-items-center"
+      style="height: 50vh"
+    >
+      <div>
+        <h1 class="text-light text-center display-3">CONTACT ME</h1>
+      </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="container my-5 py-4">
+      <div class="row">
+        <div class="col-md-8 col-lg-8">
+          <h2 class="bg-dark text-light py-1 fs-3 mb-4 rounded px-3">
+            User Info
+          </h2>
+
+          <div>
+            <!-- First Name  -->
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >First Name</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="John Doe"
+                value=""
+                required
+              />
+            </div>
+
+            <!-- Last Name  -->
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Last Name</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="John Doe"
+                value=""
+                required
+              />
+            </div>
+
+            <!-- Contact Field -->
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Contact No</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="John Doe"
+                value=""
+                required
+              />
+            </div>
+
+            <!-- Email Field -->
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >User Name</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="John Doe"
+                value=""
+                required
+              />
+            </div>
+
+            <!-- text area -->
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Any Message</label
+              >
+              <textarea class="w-100" value="This is user"> </textarea>
+            </div>
+
+            <div class="text-center">
+              <button class="btn btn-dark">Send Your Response</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- sidebar Contact Us AT -->
+        <div
+          class="col-lg-3 col-md-4 bg-dark rounded text-light px-2 py-4 ms-md-auto mt-5"
+          style="height: fit-content"
+        >
+          <h3 class="text-center fs-3 mb-3">Contact Me At</h3>
+
+          <div class="text-center mb-3">
+            <h5 class="fw-normal mb-0">Contact No</h5>
+            <span class="fs-6 px-2 text-secondary"> +92-783-17277812</span>
+          </div>
+
+          <div class="text-center mb-3">
+            <h5 class="fw-normal mb-0">Email</h5>
+            <span class="fs-6 px-2 text-secondary"> john321@xyz.com</span>
+          </div>
+
+          <div class="text-center mb-3">
+            <h5 class="fw-normal mb-0">Twitter</h5>
+            <span class="fs-6 px-2 text-secondary">John Doe</span>
+          </div>
+
+          <div class="text-center mb-3">
+            <h5 class="fw-normal mb-0">Website</h5>
+            <span class="fs-6 px-2 text-secondary">johndoe.com</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
