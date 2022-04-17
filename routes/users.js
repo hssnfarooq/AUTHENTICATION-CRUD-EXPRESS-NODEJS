@@ -3,6 +3,8 @@ var router = express.Router();
 var userService = require("../controllers/users");
 const passport = require("passport");
 
+/* Users routes */
+
 router.get("/login", function (req, res, next) {
   res.render("pages/login", { title: "Login" });
 });

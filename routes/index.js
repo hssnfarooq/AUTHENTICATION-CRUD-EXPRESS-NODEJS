@@ -3,7 +3,7 @@ var router = express.Router();
 var contactService = require("../controllers/index");
 const { ensureAuthenticated } = require("../config/authGaurd");
 
-/* GET home page. */
+/* Pages Routes */
 router.get("/", function (req, res, next) {
   res.render("pages/index", { title: "Home" });
 });
